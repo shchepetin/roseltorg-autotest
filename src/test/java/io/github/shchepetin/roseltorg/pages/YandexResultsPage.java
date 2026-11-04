@@ -8,8 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 public class YandexResultsPage extends BasePage {
 
-    private final By roseltorgResultLink =
-            By.cssSelector("#search-result a.OrganicTitle-Link[href='" + TestConfig.ROSELTORG_URL + "']");
+    private final By roseltorgResultLink = By.cssSelector("#search-result a[href='" + TestConfig.ROSELTORG_URL + "']");
     private final By defaultSearchPopupCloseButton = By.cssSelector(".DistributionActions .DistributionButtonClose");
 
     public YandexResultsPage(WebDriver driver) {
